@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDN Creations — Progetti Maker ESP32 &amp; Arduino</title>
+<meta name="description" content="GDN Creations: progetti maker basati su ESP32 e Arduino — domotica, IoT, sensori e display.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">GDN<span>Creations</span></a>
+    <nav>
+      <a href="#progetti">Progetti</a>
+      <a href="#chi-sono">Chi sono</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <p class="eyebrow">Maker &middot; ESP32 &middot; Arduino &middot; IoT</p>
+      <h1>Progetti hardware che funzionano davvero, dal PCB al firmware.</h1>
+      <p class="hero-sub">Domotica, stazioni meteo, controlli motorizzati e strumenti RF: progetti reali, costruiti e collaudati un componente alla volta.</p>
+      <div class="hero-actions">
+        <a href="#progetti" class="btn btn-primary">Guarda i progetti</a>
+        <a href="#contatti" class="btn btn-ghost">Contattami</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="progetti" class="projects">
+    <div class="container">
+      <h2>Progetti</h2>
+      <p class="section-sub">Una selezione di realizzazioni basate su microcontrollori ESP32 e Arduino.</p>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="card-tag">Domotica</div>
+          <h3>Attuatore Caldaia ESP</h3>
+          <p>Attuatore per caldaia basato su ESP32 DEVKIT V1, con integrazione SinricPro per il controllo vocale via Alexa e configurazione WiFi tramite WiFiManager. Gestisce riscaldamento e acqua calda su due relè indipendenti.</p>
+          <ul class="tags"><li>ESP32</li><li>SinricPro</li><li>Alexa</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Domotica</div>
+          <h3>Termostato WiFi (VIEWE)</h3>
+          <p>Termostato WiFi con display VIEWE 480×480, interfaccia grafica su ESP32-S3, integrazione SinricPro e controllo riscaldamento via webhook eWeLink.</p>
+          <ul class="tags"><li>ESP32-S3</li><li>Display grafico</li><li>SinricPro</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Stazioni meteo</div>
+          <h3>Stazione Meteo con Logo</h3>
+          <p>Stazione meteo ESP32-S3 con interfaccia LVGL a colori su display 480×480, previsioni a 5 giorni da Open-Meteo, ricerca città e sensore di temperatura/umidità integrato. Architettura FreeRTOS dual-core e case stampato in 3D.</p>
+          <ul class="tags"><li>ESP32-S3</li><li>LVGL</li><li>FreeRTOS</li><li>3D print</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Automazione</div>
+          <h3>Controller Tapparelle Motorizzate</h3>
+          <p>Controllo motorizzato per tapparelle con Arduino Nano ESP32, display TFT ST7789, pulsanti fisici, interblocco di sicurezza sui relè e isteresi su sensore di luminosità.</p>
+          <ul class="tags"><li>Arduino Nano ESP32</li><li>TFT</li><li>Relè</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Automazione</div>
+          <h3>Controller Tenda Motorizzata</h3>
+          <p>Apertura/chiusura automatica della tenda da sole in base a luce e meteo, con display touch ILI9341, sensore LDR e dati meteo in tempo reale da Open-Meteo.</p>
+          <ul class="tags"><li>ESP32-32E</li><li>TFT_eSPI</li><li>Open-Meteo</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Audio</div>
+          <h3>Radio Nostalgia</h3>
+          <p>Radio FM con modulo RDA5807, encoder rotativo per la sintonia, interfaccia web servita da un access point ESP32 con estetica Art Deco.</p>
+          <ul class="tags"><li>ESP32</li><li>RDA5807</li><li>Web UI</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Meteorologia RF</div>
+          <h3>WINDNAME TX</h3>
+          <p>Trasmettitore meteo a energia solare a 433MHz con rilevamento direzione del vento (8 punti cardinali in italiano) e sensore DHT22, ottimizzato con deep sleep per l'autonomia energetica.</p>
+          <ul class="tags"><li>Arduino</li><li>433MHz</li><li>Solare</li></ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-sono" class="about">
+    <div class="container about-inner">
+      <h2>Chi sono</h2>
+      <p>Sono un professionista con oltre 40 anni di esperienza tra ambito commerciale e tecnico, con un solido background in reti e lavoro pratico hands-on (dalla riparazione a livello componente di schede HVAC agli impianti elettrici marini). Da diversi anni mi dedico anche a progetti maker basati su ESP32 e Arduino: display e interfacce grafiche con LVGL, sensori, comunicazioni RF e firmware FreeRTOS.</p>
+      <p>GDN Creations raccoglie questi progetti: soluzioni concrete, pensate per funzionare in ambienti reali.</p>
+    </div>
+  </section>
+
+  <section id="contatti" class="contact">
+    <div class="container">
+      <h2>Contatti</h2>
+      <p>Per informazioni sui progetti o collaborazioni, scrivimi.</p>
+      <a class="btn btn-primary" href="mailto:giuseppedenicola32@gmail.com">giuseppedenicola32@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
