@@ -48,7 +48,7 @@ h1, h2, h3, .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 84px;
 }
 
 .logo { display: flex; align-items: center; text-decoration: none; }
