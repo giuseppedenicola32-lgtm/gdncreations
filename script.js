@@ -1,20 +1,27 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Contatore visite (giornaliere e totali) tramite CountAPI (servizio gratuito, no login)
+// Contatore visite (giornaliere e totali) tramite CounterAPI (servizio gratuito, no login)
 (function () {
-  const NAMESPACE = "gdncreations-com";
+  const WORKSPACE = "gdncreations-com";
   const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
   const totalEl = document.getElementById('visits-total');
   const todayEl = document.getElementById('visits-today');
   if (!totalEl && !todayEl) return;
 
-  fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/total`)
-    .then(r => r.json())
-    .then(data => { if (totalEl) totalEl.textContent = data.value.toLocaleString('it-IT'); })
-    .catch(() => { if (totalEl) totalEl.textContent = "—"; });
+  function bump(counterName, el) {
+    if (!el) return;
+    fetch(`https://api.counterapi.dev/v1/${WORKSPACE}/${counterName}/up`)
+      .then(r => {
+        if (!r.ok) throw new Error("bad response");
+        return r.json();
+      })
+      .then(data => {
+        const value = data.count ?? data.value ?? data.data?.up_count;
+        el.textContent = (value ?? "—").toLocaleString ? value.toLocaleString('it-IT') : value;
+      })
+      .catch(() => { el.textContent = "n/d"; });
+  }
 
-  fetch(`https://api.countapi.xyz/hit/${NAMESPACE}/day-${today}`)
-    .then(r => r.json())
-    .then(data => { if (todayEl) todayEl.textContent = data.value.toLocaleString('it-IT'); })
-    .catch(() => { if (todayEl) todayEl.textContent = "—"; });
+  bump("total", totalEl);
+  bump(`giorno-${today}`, todayEl);
 })();
