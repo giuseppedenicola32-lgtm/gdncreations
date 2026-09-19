@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termostato WiFi (VIEWE) — GDN Creations</title>
+<meta name="description" content="Termostato con interfaccia grafica a colori, controllo riscaldamento via webhook e integrazione SinricPro.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-blue">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Domotica</div>
+      <h1>Termostato WiFi (VIEWE)</h1>
+      <p class="hero-sub">Termostato con interfaccia grafica a colori, controllo riscaldamento via webhook e integrazione SinricPro.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <div class="notice-banner">&#128679; Pagina in allestimento — descrizione e foto definitive in arrivo a breve.</div>
+        <h2>Descrizione</h2>
+        <p>Un termostato WiFi con display a colori VIEWE UEDX48480040E-WB-A da 480×480 pixel, pensato per sostituire un termostato tradizionale con un'interfaccia moderna e touch. Il firmware gira su ESP32-S3 e utilizza la libreria ESP32_Display_Panel per la gestione del pannello. Il controllo del riscaldamento avviene tramite un webhook verso eWeLink, mentre l'integrazione SinricPro consente il comando vocale e da app. Il progetto ha richiesto un lavoro di compatibilità specifico: core ESP32 versione 3.0.7 e SinricPro v2.10.0 per garantire la compatibilità con GCC 8.4/C++14.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Microcontrollore:</strong> ESP32-S3</li>
+          <li><strong>Display:</strong> VIEWE UEDX48480040E-WB-A, 480×480</li>
+          <li><strong>Libreria display:</strong> ESP32_Display_Panel</li>
+          <li><strong>Core ESP32:</strong> 3.0.7</li>
+          <li><strong>SinricPro:</strong> v2.10.0 (per compatibilità GCC 8.4 / C++14)</li>
+          <li><strong>Controllo riscaldamento:</strong> Webhook eWeLink</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>ESP32-S3</li>
+          <li>Display grafico</li>
+          <li>SinricPro</li>
+          <li>eWeLink</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

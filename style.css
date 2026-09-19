@@ -284,6 +284,20 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 10px; }
   align-items: start;
 }
 
+.notice-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff6da;
+  border: 1px solid #f0dfa0;
+  color: #7a5d0a;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 28px;
+}
+
 .project-layout h2 { font-size: 1.3rem; margin: 0 0 14px; }
 .project-layout p { color: var(--text-dim); margin: 0 0 20px; }
 

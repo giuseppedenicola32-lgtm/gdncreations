@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stazione Meteo con Logo — GDN Creations</title>
+<meta name="description" content="Stazione meteo con interfaccia LVGL a colori, previsioni a 5 giorni e case stampato in 3D.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-sky">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Stazioni meteo</div>
+      <h1>Stazione Meteo con Logo</h1>
+      <p class="hero-sub">Stazione meteo con interfaccia LVGL a colori, previsioni a 5 giorni e case stampato in 3D.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <div class="notice-banner">&#128679; Pagina in allestimento — descrizione e foto definitive in arrivo a breve.</div>
+        <h2>Descrizione</h2>
+        <p>Una stazione meteo da interno con display touch a colori 480×480, costruita su ESP32-S3 con interfaccia grafica LVGL v8. Mostra temperatura e umidità rilevate localmente da un sensore GY-21 (HTU21D), oltre a previsioni a 5 giorni recuperate tramite le API di Open-Meteo, con funzione di ricerca città tramite geocoding. Il firmware è organizzato su architettura FreeRTOS dual-core: la rete gira sul Core 0, l'interfaccia grafica LVGL sul Core 1, per mantenere l'interfaccia fluida anche durante le chiamate di rete. Il dispositivo è alloggiato in una scocca a forma di cuneo progettata su misura e stampata in 3D.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Microcontrollore:</strong> ESP32-S3 (16MB Flash, OPI PSRAM)</li>
+          <li><strong>Display:</strong> VIEWE UEDX48480040E-WB-A, 480×480, LVGL v8</li>
+          <li><strong>Sensore ambientale:</strong> GY-21 (HTU21D) su Wire1 — SDA GPIO42, SCL GPIO45</li>
+          <li><strong>Architettura firmware:</strong> FreeRTOS dual-core (rete su Core 0, grafica su Core 1)</li>
+          <li><strong>Dati meteo:</strong> Open-Meteo — geocoding città + previsioni 5 giorni</li>
+          <li><strong>Case:</strong> Progettato su misura, stampato in 3D</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>ESP32-S3</li>
+          <li>LVGL</li>
+          <li>FreeRTOS</li>
+          <li>3D print</li>
+          <li>Open-Meteo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
