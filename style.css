@@ -51,8 +51,8 @@ h1, h2, h3, .logo {
   height: 68px;
 }
 
-.logo { font-weight: 700; font-size: 1.15rem; color: var(--text); text-decoration: none; }
-.logo span { color: var(--accent); }
+.logo { display: flex; align-items: center; text-decoration: none; }
+.logo img { display: block; border-radius: 8px; }
 
 nav { display: flex; gap: 28px; }
 nav a {
