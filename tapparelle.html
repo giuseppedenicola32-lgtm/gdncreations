@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controller Tapparelle Motorizzate — GDN Creations</title>
+<meta name="description" content="Controllo motorizzato con interfaccia TFT, interblocco di sicurezza e regolazione automatica su luminosità.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-green">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Automazione</div>
+      <h1>Controller Tapparelle Motorizzate</h1>
+      <p class="hero-sub">Controllo motorizzato con interfaccia TFT, interblocco di sicurezza e regolazione automatica su luminosità.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <h2>Descrizione</h2>
+        <p>Sistema di automazione per tapparelle motorizzate basato su Arduino Nano ESP32, con display TFT ST7789 per lo stato del sistema e pulsanti fisici per i comandi manuali (apri, chiudi, cambio modalità). La sicurezza è garantita da un interblocco elettrico sui relè che pilotano il motore, per evitare comandi contrastanti, e da un timeout di sicurezza di 30 secondi che ferma il motore in ogni caso. La regolazione automatica si basa su un sensore di luminosità (LDR) con isteresi, per evitare aperture/chiusure ripetute in condizioni di luce al limite della soglia.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Microcontrollore:</strong> Arduino Nano ESP32 + modulo GMY020-02</li>
+          <li><strong>Display:</strong> TFT ST7789 (libreria TFT_eSPI)</li>
+          <li><strong>Controlli:</strong> Pulsanti fisici APRI / CHIUDI / MODE</li>
+          <li><strong>Sicurezza:</strong> Interblocco sui relè + timeout motore di 30 secondi</li>
+          <li><strong>Automazione:</strong> Sensore LDR con isteresi</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>Arduino Nano ESP32</li>
+          <li>TFT</li>
+          <li>Relè</li>
+          <li>LDR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

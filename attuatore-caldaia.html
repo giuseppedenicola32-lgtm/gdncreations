@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attuatore Caldaia ESP — GDN Creations</title>
+<meta name="description" content="Controllo smart della caldaia con ESP32, relè dedicati e comando vocale via Alexa.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-warm">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Domotica</div>
+      <h1>Attuatore Caldaia ESP</h1>
+      <p class="hero-sub">Controllo smart della caldaia con ESP32, relè dedicati e comando vocale via Alexa.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <h2>Descrizione</h2>
+        <p>Questo progetto trasforma una caldaia tradizionale in un dispositivo controllabile da smartphone e da comando vocale. Il cuore del sistema è una scheda DOIT ESP32 DEVKIT V1, collegata a due relè che pilotano indipendentemente il circuito del riscaldamento e quello dell'acqua calda sanitaria. La configurazione della rete WiFi avviene tramite WiFiManager, che espone un portale di configurazione al primo avvio senza bisogno di modificare il firmware. L'integrazione con SinricPro permette di comandare l'impianto tramite Alexa con semplici comandi vocali, oltre che dall'app dedicata.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Microcontrollore:</strong> ESP32 DEVKIT V1 (DOIT)</li>
+          <li><strong>Relè riscaldamento:</strong> GPIO2 (pin di strapping, richiede scollegare il filo durante il flashing)</li>
+          <li><strong>Relè acqua calda:</strong> GPIO4</li>
+          <li><strong>Logica relè:</strong> RELE_ON = HIGH / RELE_OFF = LOW</li>
+          <li><strong>Connettività:</strong> WiFiManager per la configurazione WiFi</li>
+          <li><strong>Integrazione smart home:</strong> SinricPro + Alexa</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>ESP32</li>
+          <li>SinricPro</li>
+          <li>Alexa</li>
+          <li>WiFiManager</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

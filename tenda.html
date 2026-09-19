@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controller Tenda Motorizzata — GDN Creations</title>
+<meta name="description" content="Apertura e chiusura automatica della tenda da sole in base a luce ambientale e previsioni meteo.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-orange">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Automazione</div>
+      <h1>Controller Tenda Motorizzata</h1>
+      <p class="hero-sub">Apertura e chiusura automatica della tenda da sole in base a luce ambientale e previsioni meteo.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <h2>Descrizione</h2>
+        <p>Controller per tenda da sole motorizzata, costruito su una scheda Elegoo ESP32-32E con display touch ILI9341 (controller XPT2046). Il sistema decide autonomamente quando aprire o chiudere la tenda combinando la lettura di un sensore di luminosità (LDR, l'unico pin ADC realmente accessibile su questa scheda) con i dati meteo in tempo reale scaricati da Open-Meteo, evitando di lasciare la tenda esposta in caso di vento o pioggia previsti. L'orario di sistema è sincronizzato via NTP sul fuso orario di Roma, per gestire eventuali logiche orarie oltre a quelle basate sui sensori.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Microcontrollore:</strong> Elegoo ESP32-32E</li>
+          <li><strong>Display:</strong> ILI9341 + touch XPT2046 (TFT_eSPI)</li>
+          <li><strong>Sensore luce:</strong> LDR su GPIO35 (unico pin ADC accessibile)</li>
+          <li><strong>Attuazione:</strong> Relè su GPIO27 e GPIO18</li>
+          <li><strong>Rete:</strong> WiFiManager + sincronizzazione NTP (fuso orario Roma)</li>
+          <li><strong>Dati meteo:</strong> Open-Meteo in tempo reale</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>ESP32-32E</li>
+          <li>TFT_eSPI</li>
+          <li>Open-Meteo</li>
+          <li>WiFiManager</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

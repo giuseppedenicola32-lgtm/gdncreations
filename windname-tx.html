@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINDNAME TX — GDN Creations</title>
+<meta name="description" content="Trasmettitore meteo solare a 433MHz con direzione del vento in italiano e deep sleep per l'autonomia.">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a>
+    <nav>
+      <a href="../index.html#progetti">Progetti</a>
+      <a href="../index.html#chi-sono">Chi sono</a>
+      <a href="../index.html#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="project-hero media-teal">
+    <div class="container">
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Meteorologia RF</div>
+      <h1>WINDNAME TX</h1>
+      <p class="hero-sub">Trasmettitore meteo solare a 433MHz con direzione del vento in italiano e deep sleep per l'autonomia.</p>
+    </div>
+  </section>
+
+  <section class="project-body">
+    <div class="container project-layout">
+      <div>
+        <h2>Descrizione</h2>
+        <p>Trasmettitore meteo autonomo a energia solare, basato su Arduino e modulo RF a 433MHz. Rileva temperatura e umidità con un sensore DHT22 e la direzione del vento espressa secondo gli 8 punti cardinali in italiano. Per massimizzare l'autonomia energetica il dispositivo utilizza il deep sleep tramite la libreria LowPower, con un MOSFET che taglia completamente l'alimentazione delle periferiche durante il riposo. Una delle sfide principali è stata risolvere i fallimenti di trasmissione dopo il risveglio dal deep sleep, risolti con il reset del Timer1, la disabilitazione del watchdog (wdt_disable) e una sequenza controllata di power-cycling del modulo RF.</p>
+
+        <h2>Galleria foto</h2>
+        <div class="gallery">
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+          <div class="photo-placeholder">Foto in arrivo</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Caratteristiche tecniche</h3>
+        <ul class="specs">
+          <li><strong>Piattaforma:</strong> Arduino + modulo RF 433MHz</li>
+          <li><strong>Alimentazione:</strong> Pannello solare, deep sleep via libreria LowPower</li>
+          <li><strong>Sensori:</strong> DHT22 (temperatura/umidità) + direzione vento (8 punti cardinali)</li>
+          <li><strong>Gestione energia:</strong> MOSFET per il taglio alimentazione periferiche</li>
+          <li><strong>Affidabilità:</strong> Reset Timer1, wdt_disable(), power-cycling del modulo RF post-sleep</li>
+        </ul>
+        <h3>Tecnologie</h3>
+        <ul class="tags">
+          <li>Arduino</li>
+          <li>433MHz</li>
+          <li>Solare</li>
+          <li>DHT22</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
