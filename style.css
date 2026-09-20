@@ -283,6 +283,16 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 10px; }
   font-size: clamp(1.8rem, 4vw, 2.6rem);
 }
 
+.project-logo {
+  display: block;
+  height: 90px;
+  width: auto;
+  margin: 16px 0 4px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.9);
+  padding: 8px 14px;
+}
+
 .project-hero .hero-sub { color: rgba(255,255,255,0.9); max-width: 640px; margin: 0; }
 
 .project-body { padding: 60px 0; }
