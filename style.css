@@ -285,12 +285,13 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 10px; }
 
 .project-logo {
   display: block;
-  height: 90px;
+  height: 56px;
   width: auto;
-  margin: 16px 0 4px;
-  border-radius: 14px;
+  max-width: 220px;
+  margin: 14px 0 4px;
+  border-radius: 10px;
   background: rgba(255,255,255,0.9);
-  padding: 8px 14px;
+  padding: 6px 10px;
 }
 
 .project-hero .hero-sub { color: rgba(255,255,255,0.9); max-width: 640px; margin: 0; }
