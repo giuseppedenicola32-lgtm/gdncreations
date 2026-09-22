@@ -4,11 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Meteo Station — GDN Creations</title>
-<meta name="description" content="Stazione meteo con interfaccia LVGL a colori, previsioni a 5 giorni e case stampato in 3D.">
+<meta name="description" content="Smart Meteo Station GDN Creations: meteo, Internet Radio, radar, utility, pannello web e personalizzazione aziendale.">
 <link rel="icon" type="image/png" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
+<style>
+  .meteo-intro{max-width:860px;margin:0 auto 36px}.meteo-intro p{font-size:1.08rem;line-height:1.75}
+  .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0 42px}
+  .feature-box{background:#fff;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+  .feature-box h3{margin-top:0;margin-bottom:10px}.feature-box p{margin:0;line-height:1.65}
+  .feature-box ul{margin:12px 0 0;padding-left:20px;line-height:1.7}
+  .highlight-band{background:#f4f8fb;border-radius:22px;padding:30px;margin:34px 0}
+  .highlight-band h2{margin-top:0}.highlight-band p{line-height:1.7}
+  .product-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0 38px}
+  .product-point{background:#fff;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+  .product-point strong{display:block;margin-bottom:7px}
+  .catalog-cta{margin:40px 0 10px;padding:30px;border:1px solid rgba(38,70,83,.14);border-radius:22px;text-align:center;background:#fff}
+  .catalog-cta h2{margin-top:0}.catalog-cta p{max-width:760px;margin:0 auto 18px;line-height:1.7}
+  .project-logo{max-width:240px;height:auto;margin:12px 0 10px}
+  @media(max-width:780px){.feature-grid,.product-points{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -31,44 +47,111 @@
       <div class="card-tag">Stazioni meteo</div>
       <img src="smart-meteo-station-logo.png" alt="Smart Meteo Station" class="project-logo" width="240" height="112">
       <h1>Smart Meteo Station</h1>
-      <p class="hero-sub">Stazione meteo con interfaccia LVGL a colori, previsioni a 5 giorni e case stampato in 3D.</p>
+      <p class="hero-sub">Il meteo trova posto sulla tua scrivania.</p>
+      <p class="hero-sub">Meteo · Internet Radio · Utility</p>
     </div>
   </section>
 
   <section class="project-body">
-    <div class="container project-layout">
-      <div>
-        <div class="notice-banner">&#128679; Pagina in allestimento — descrizione e foto definitive in arrivo a breve.</div>
-        <h2>Descrizione</h2>
-        <p>Una stazione meteo da interno con display touch a colori 480×480, costruita su ESP32-S3 con interfaccia grafica LVGL v8. Mostra temperatura e umidità rilevate localmente da un sensore GY-21 (HTU21D), oltre a previsioni a 5 giorni recuperate tramite le API di Open-Meteo, con funzione di ricerca città tramite geocoding. Il firmware è organizzato su architettura FreeRTOS dual-core: la rete gira sul Core 0, l'interfaccia grafica LVGL sul Core 1, per mantenere l'interfaccia fluida anche durante le chiamate di rete. Il dispositivo è alloggiato in una scocca a forma di cuneo progettata su misura e stampata in 3D.</p>
+    <div class="container">
 
-        <h2>Galleria foto</h2>
-        <div class="gallery">
-          <div class="photo-placeholder">Foto in arrivo</div>
-          <div class="photo-placeholder">Foto in arrivo</div>
-          <div class="photo-placeholder">Foto in arrivo</div>
+      <div class="meteo-intro">
+        <h2>Un gadget tecnologico utile, connesso e personalizzabile</h2>
+        <p>Smart Meteo Station riunisce in un unico dispositivo touch le informazioni meteo della località selezionata, i dati dell'ambiente interno, funzioni Internet Radio e diverse utility. È pensata per restare sulla scrivania ed essere consultata direttamente dal display, dallo smartphone o dal browser del PC sulla stessa rete locale.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h3>Il tuo punto meteo</h3>
+          <p>Condizioni attuali e previsioni per i prossimi cinque giorni, con dettagli orari da esplorare sul touchscreen.</p>
+          <ul>
+            <li>Temperatura e umidità interne con storico delle ultime 24 ore</li>
+            <li>Vento e raffiche</li>
+            <li>Pressione atmosferica</li>
+            <li>Pioggia e probabilità di precipitazione</li>
+            <li>Indice UV e qualità dell'aria</li>
+            <li>Alba, tramonto, temperatura percepita e punto di rugiada</li>
+          </ul>
+        </div>
+
+        <div class="feature-box">
+          <h3>Molto più del meteo</h3>
+          <p>Funzioni aggiuntive da usare durante la giornata, raccolte in un menu touch semplice da consultare.</p>
+          <ul>
+            <li>Internet Radio con ricerca per paese e genere musicale</li>
+            <li>Fino a sei emittenti preferite</li>
+            <li>Radar aereo con dettagli degli aeromobili disponibili</li>
+            <li>Radar pioggia con mappa e animazione</li>
+            <li>Calcolatrice</li>
+            <li>Notizie scorrevoli</li>
+          </ul>
+        </div>
+
+        <div class="feature-box">
+          <h3>Connessa al tuo quotidiano</h3>
+          <p>Il pannello web permette di consultare dati e impostazioni anche da smartphone, PC e notebook collegati alla stessa rete locale.</p>
+          <ul>
+            <li>Display touch a colori 480 × 480 pixel</li>
+            <li>Wi‑Fi integrato</li>
+            <li>Accesso da browser</li>
+            <li>Configurazione guidata di rete e località</li>
+          </ul>
+        </div>
+
+        <div class="feature-box">
+          <h3>Personalizzazione aziendale</h3>
+          <p>Smart Meteo Station può essere personalizzata con il marchio del cliente e una pagina informativa dedicata.</p>
+          <ul>
+            <li>Logo del cliente</li>
+            <li>Pagina informativa aziendale</li>
+            <li>Ideale per omaggi, ricorrenze ed eventi</li>
+            <li>Prodotto pensato per restare visibile ogni giorno sulla scrivania</li>
+          </ul>
         </div>
       </div>
 
-      <div class="sidebar-card">
+      <div class="highlight-band">
+        <h2>Allerta meteo</h2>
+        <p>In presenza di condizioni segnalate per la località selezionata, la stazione può mostrare una schermata di allerta a tutto schermo, immediatamente riconoscibile. È inoltre disponibile uno storico con data, località e fenomeno indicato.</p>
+        <p><strong>Nota:</strong> le segnalazioni derivano dalle previsioni meteo e non sostituiscono i bollettini ufficiali.</p>
+      </div>
+
+      <h2>Informazioni di prodotto</h2>
+      <div class="product-points">
+        <div class="product-point"><strong>Display</strong>Touch a colori, 480 × 480 pixel.</div>
+        <div class="product-point"><strong>Meteo</strong>Condizioni attuali, previsioni a 5 giorni e dettagli orari.</div>
+        <div class="product-point"><strong>Ambiente interno</strong>Temperatura e umidità dal sensore integrato con storico 24 ore.</div>
+        <div class="product-point"><strong>Utility</strong>Radar aereo, radar pioggia, calcolatrice, notizie e storico segnalazioni.</div>
+        <div class="product-point"><strong>Lingue</strong>Italiano, inglese, tedesco, francese e spagnolo.</div>
+        <div class="product-point"><strong>Connessione</strong>Wi‑Fi e pannello web da smartphone o PC sulla stessa rete locale.</div>
+      </div>
+
+      <div class="catalog-cta">
+        <h2>Smart Meteo Station</h2>
+        <p>Una proposta per chi cerca un accessorio tecnologico da scrivania e un prodotto personalizzabile con il proprio marchio. Per configurazioni, personalizzazioni e informazioni commerciali contatta GDN Creations.</p>
+        <a href="../index.html#contatti" class="btn btn-primary">Richiedi informazioni</a>
+      </div>
+
+      <div class="sidebar-card" style="margin-top:34px">
         <h3>Caratteristiche tecniche</h3>
         <ul class="specs">
           <li><strong>Microcontrollore:</strong> ESP32-S3 (16MB Flash, OPI PSRAM)</li>
           <li><strong>Display:</strong> VIEWE UEDX48480040E-WB-A, 480×480, LVGL v8</li>
-          <li><strong>Sensore ambientale:</strong> GY-21 (HTU21D) su Wire1 — SDA GPIO42, SCL GPIO45</li>
-          <li><strong>Architettura firmware:</strong> FreeRTOS dual-core (rete su Core 0, grafica su Core 1)</li>
-          <li><strong>Dati meteo:</strong> Open-Meteo — geocoding città + previsioni 5 giorni</li>
-          <li><strong>Case:</strong> Progettato su misura, stampato in 3D</li>
+          <li><strong>Sensore ambientale:</strong> GY-21 (HTU21D)</li>
+          <li><strong>Architettura firmware:</strong> FreeRTOS dual-core</li>
+          <li><strong>Dati meteo:</strong> servizi online con geocoding città e previsioni</li>
+          <li><strong>Case:</strong> progettato su misura e stampato in 3D</li>
         </ul>
         <h3>Tecnologie</h3>
         <ul class="tags">
           <li>ESP32-S3</li>
           <li>LVGL</li>
           <li>FreeRTOS</li>
+          <li>Wi‑Fi</li>
           <li>3D print</li>
-          <li>Open-Meteo</li>
         </ul>
       </div>
+
     </div>
   </section>
 
@@ -80,8 +163,7 @@
   </div>
 </footer>
 
-<script data-goatcounter="https://gdncreations.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://gdncreations.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script src="../script.js"></script>
 </body>
 </html>
