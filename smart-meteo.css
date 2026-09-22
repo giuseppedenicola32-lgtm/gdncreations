@@ -1,0 +1,180 @@
+/* GDN Creations - Smart Meteo Station section */
+.sms-section {
+  padding: 80px 24px;
+  background: #f5f8fb;
+  color: #0c2238;
+}
+
+.sms-wrap {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.sms-kicker {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: #00a8d8;
+}
+
+.sms-copy h2 {
+  margin: 0 0 10px;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: .98;
+}
+
+.sms-lead {
+  margin: 0 0 20px;
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  font-weight: 700;
+}
+
+.sms-copy > p:not(.sms-lead) {
+  max-width: 760px;
+  line-height: 1.7;
+  color: #40556a;
+}
+
+.sms-features {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.sms-features > div {
+  padding: 18px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(12, 34, 56, .08);
+}
+
+.sms-features strong,
+.sms-features span {
+  display: block;
+}
+
+.sms-features strong {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.sms-features span {
+  color: #53697d;
+  font-size: .94rem;
+  line-height: 1.5;
+}
+
+.sms-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.sms-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+}
+
+.sms-btn:hover {
+  transform: translateY(-2px);
+}
+
+.sms-btn-primary {
+  background: #0c2238;
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(12, 34, 56, .18);
+}
+
+.sms-btn-secondary {
+  background: #fff;
+  color: #0c2238;
+  border: 1px solid #c9d7e4;
+}
+
+.sms-catalog {
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0c2238;
+  box-shadow: 0 20px 50px rgba(12, 34, 56, .20);
+}
+
+.sms-catalog-head {
+  padding: 18px 20px 14px;
+  color: #fff;
+}
+
+.sms-catalog-head span,
+.sms-catalog-head strong {
+  display: block;
+}
+
+.sms-catalog-head span {
+  color: #79d9f3;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 3px;
+}
+
+.sms-catalog iframe {
+  display: block;
+  width: 100%;
+  height: 680px;
+  border: 0;
+  background: #fff;
+}
+
+.sms-note {
+  margin: 0;
+  padding: 12px 16px 15px;
+  color: #c3d2df;
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 900px) {
+  .sms-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .sms-catalog iframe {
+    height: 560px;
+  }
+}
+
+@media (max-width: 620px) {
+  .sms-section {
+    padding: 56px 18px;
+  }
+
+  .sms-features {
+    grid-template-columns: 1fr;
+  }
+
+  .sms-actions {
+    flex-direction: column;
+  }
+
+  .sms-btn {
+    width: 100%;
+  }
+
+  .sms-catalog iframe {
+    height: 500px;
+  }
+}
