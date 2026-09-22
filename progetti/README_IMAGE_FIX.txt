@@ -1,0 +1,1 @@
+Sto sostituendo l'anteprima incorporata con un file immagine separato per evitare la visualizzazione corrotta nel browser.
