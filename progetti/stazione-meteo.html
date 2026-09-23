@@ -10,50 +10,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
 <style>
-  .meteo-intro{max-width:860px;margin:0 auto 36px}.meteo-intro p{font-size:1.08rem;line-height:1.75}
-  .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0 42px}
-  .feature-box{background:#fff;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
-  .feature-box h3{margin-top:0;margin-bottom:10px}.feature-box p{margin:0;line-height:1.65}
-  .feature-box ul{margin:12px 0 0;padding-left:20px;line-height:1.7}
-  .highlight-band{background:#f4f8fb;border-radius:22px;padding:30px;margin:34px 0}
-  .highlight-band h2{margin-top:0}.highlight-band p{line-height:1.7}
-  .product-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0 38px}
-  .product-point{background:#fff;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
-  .product-point strong{display:block;margin-bottom:7px}
-  .meteo-gallery{margin:42px 0}.meteo-gallery h2{text-align:center;margin-bottom:12px}.meteo-gallery p{max-width:760px;margin:0 auto 22px;text-align:center;line-height:1.7}
-  .meteo-gallery img{display:block;width:100%;max-width:980px;height:auto;margin:0 auto;border-radius:22px;box-shadow:0 14px 40px rgba(0,0,0,.12);background:#f3f3f3}
-  .catalog-cta{margin:40px 0 10px;padding:30px;border:1px solid rgba(38,70,83,.14);border-radius:22px;text-align:center;background:#fff}
-  .catalog-cta h2{margin-top:0}.catalog-cta p{max-width:760px;margin:0 auto 18px;line-height:1.7}
-  .catalog-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-  .project-logo{max-width:240px;height:auto;margin:12px 0 10px}
-  @media(max-width:780px){.feature-grid,.product-points{grid-template-columns:1fr}}
+.meteo-intro{max-width:860px;margin:0 auto 36px}.meteo-intro p{font-size:1.08rem;line-height:1.75}
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:28px 0 42px}
+.feature-box{background:#fff;border-radius:18px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.07)}
+.feature-box h3{margin-top:0;margin-bottom:10px}.feature-box p{margin:0;line-height:1.65}.feature-box ul{margin:12px 0 0;padding-left:20px;line-height:1.7}
+.highlight-band{background:#f4f8fb;border-radius:22px;padding:30px;margin:34px 0}.highlight-band h2{margin-top:0}.highlight-band p{line-height:1.7}
+.product-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0 38px}.product-point{background:#fff;border-radius:16px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.06)}.product-point strong{display:block;margin-bottom:7px}
+.photo-gallery{margin:44px 0}.photo-gallery h2{text-align:center}.photo-gallery>p{text-align:center;max-width:760px;margin:0 auto 24px}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.photo-card{background:#fff;border-radius:18px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}.photo-card img{display:block;width:100%;height:auto;border-radius:12px}.photo-card p{text-align:center;margin:10px 4px 4px;font-weight:600}
+.catalog-cta{margin:40px 0 10px;padding:30px;border:1px solid rgba(38,70,83,.14);border-radius:22px;text-align:center;background:#fff}.catalog-cta h2{margin-top:0}.catalog-cta p{max-width:760px;margin:0 auto 18px;line-height:1.7}.catalog-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.project-logo{max-width:240px;height:auto;margin:12px 0 10px}
+@media(max-width:780px){.feature-grid,.product-points,.photo-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header class="site-header"><div class="container header-inner"><a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a><nav><a href="../index.html#progetti">Progetti</a><a href="../index.html#chi-sono">Chi sono</a><a href="../index.html#contatti">Contatti</a></nav></div></header>
 <main>
-<section class="project-hero media-sky"><div class="container"><a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a><div class="card-tag">Stazioni meteo</div><img src="smart-meteo-station-logo.png" alt="Smart Meteo Station" class="project-logo" width="240" height="112"><h1>Smart Meteo Station</h1><p class="hero-sub">Il meteo trova posto sulla tua scrivania.</p><p class="hero-sub">Meteo · Internet Radio · Utility</p></div></section>
+<section class="project-hero media-sky"><div class="container"><a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a><div class="card-tag">Stazioni meteo</div><img src="smart-meteo-station-logo.png" alt="Smart Meteo Station" class="project-logo"><h1>Smart Meteo Station</h1><p class="hero-sub">Il meteo trova posto sulla tua scrivania.</p><p class="hero-sub">Meteo · Internet Radio · Utility</p></div></section>
 <section class="project-body"><div class="container">
 <div class="meteo-intro"><h2>Un gadget tecnologico utile, connesso e personalizzabile</h2><p>Smart Meteo Station riunisce in un unico dispositivo touch le informazioni meteo della località selezionata, i dati dell'ambiente interno, funzioni Internet Radio e diverse utility. È pensata per restare sulla scrivania ed essere consultata direttamente dal display, dallo smartphone o dal browser del PC sulla stessa rete locale.</p></div>
 <div class="feature-grid">
 <div class="feature-box"><h3>Il tuo punto meteo</h3><p>Condizioni attuali e previsioni per i prossimi cinque giorni, con dettagli orari da esplorare sul touchscreen.</p><ul><li>Temperatura e umidità interne con storico delle ultime 24 ore</li><li>Vento e raffiche</li><li>Pressione atmosferica</li><li>Pioggia e probabilità di precipitazione</li><li>Indice UV e qualità dell'aria</li><li>Alba, tramonto, temperatura percepita e punto di rugiada</li></ul></div>
-<div class="feature-box"><h3>Molto più del meteo</h3><p>Funzioni aggiuntive da usare durante la giornata, raccolte in un menu touch semplice da consultare.</p><ul><li>Internet Radio con ricerca per paese e genere musicale</li><li>Fino a sei emittenti preferite</li><li>Radar aereo con dettagli degli aeromobili disponibili</li><li>Radar pioggia con mappa e animazione</li><li>Calcolatrice</li><li>Notizie scorrevoli</li></ul></div>
-<div class="feature-box"><h3>Connessa al tuo quotidiano</h3><p>Il pannello web permette di consultare dati e impostazioni anche da smartphone, PC e notebook collegati alla stessa rete locale.</p><ul><li>Display touch a colori 480 × 480 pixel</li><li>Wi‑Fi integrato</li><li>Accesso da browser</li><li>Configurazione guidata di rete e località</li></ul></div>
-<div class="feature-box"><h3>Personalizzazione aziendale</h3><p>Smart Meteo Station può essere personalizzata con il marchio del cliente e una pagina informativa dedicata.</p><ul><li>Logo del cliente</li><li>Pagina informativa aziendale</li><li>Ideale per omaggi, ricorrenze ed eventi</li><li>Prodotto pensato per restare visibile ogni giorno sulla scrivania</li></ul></div>
+<div class="feature-box"><h3>Molto più del meteo</h3><p>Funzioni aggiuntive raccolte in un menu touch semplice da consultare.</p><ul><li>Internet Radio</li><li>Radar aereo</li><li>Radar pioggia</li><li>Calcolatrice</li><li>Notizie scorrevoli</li></ul></div>
+<div class="feature-box"><h3>Connessa al tuo quotidiano</h3><p>Il pannello web permette di consultare dati e impostazioni anche da smartphone, PC e notebook collegati alla stessa rete locale.</p></div>
+<div class="feature-box"><h3>Personalizzazione aziendale</h3><p>Smart Meteo Station può essere personalizzata con il marchio del cliente e una pagina informativa dedicata.</p></div>
 </div>
-<div class="highlight-band"><h2>Allerta meteo</h2><p>In presenza di condizioni segnalate per la località selezionata, la stazione può mostrare una schermata di allerta a tutto schermo, immediatamente riconoscibile. È inoltre disponibile uno storico con data, località e fenomeno indicato.</p><p><strong>Nota:</strong> le segnalazioni derivano dalle previsioni meteo e non sostituiscono i bollettini ufficiali.</p></div>
-<h2>Informazioni di prodotto</h2><div class="product-points"><div class="product-point"><strong>Display</strong>Touch a colori, 480 × 480 pixel.</div><div class="product-point"><strong>Meteo</strong>Condizioni attuali, previsioni a 5 giorni e dettagli orari.</div><div class="product-point"><strong>Ambiente interno</strong>Temperatura e umidità dal sensore integrato con storico 24 ore.</div><div class="product-point"><strong>Utility</strong>Radar aereo, radar pioggia, calcolatrice, notizie e storico segnalazioni.</div><div class="product-point"><strong>Lingue</strong>Italiano, inglese, tedesco, francese e spagnolo.</div><div class="product-point"><strong>Connessione</strong>Wi‑Fi e pannello web da smartphone o PC sulla stessa rete locale.</div></div>
-<section class="meteo-gallery" aria-labelledby="galleria-meteo"><h2 id="galleria-meteo">Foto dal catalogo Smart Meteo Station</h2><p>Anteprima reale del catalogo con il prodotto e le principali schermate operative.</p><img id="meteoCatalogPreview" alt="Anteprima del catalogo Smart Meteo Station con prodotto e funzioni meteo"></section>
-<div class="catalog-cta"><h2>Catalogo Smart Meteo Station</h2><p>Consulta il catalogo direttamente sul sito.</p><div class="catalog-actions"><a href="catalogo-smart-meteo.html" class="btn btn-primary">Apri il catalogo</a><a href="../index.html#contatti" class="btn btn-ghost">Richiedi informazioni</a></div></div>
-<div class="sidebar-card" style="margin-top:34px"><h3>Caratteristiche tecniche</h3><ul class="specs"><li><strong>Microcontrollore:</strong> ESP32-S3 (16MB Flash, OPI PSRAM)</li><li><strong>Display:</strong> VIEWE UEDX48480040E-WB-A, 480×480, LVGL v8</li><li><strong>Sensore ambientale:</strong> GY-21 (HTU21D)</li><li><strong>Architettura firmware:</strong> FreeRTOS dual-core</li><li><strong>Dati meteo:</strong> servizi online con geocoding città e previsioni</li><li><strong>Case:</strong> progettato su misura e stampato in 3D</li></ul><h3>Tecnologie</h3><ul class="tags"><li>ESP32-S3</li><li>LVGL</li><li>FreeRTOS</li><li>Wi‑Fi</li><li>3D print</li></ul></div>
+<div class="highlight-band"><h2>Allerta meteo</h2><p>In presenza di condizioni segnalate per la località selezionata, la stazione può mostrare una schermata di allerta a tutto schermo e conservare uno storico delle segnalazioni.</p><p><strong>Nota:</strong> le segnalazioni derivano dalle previsioni meteo e non sostituiscono i bollettini ufficiali.</p></div>
+<h2>Informazioni di prodotto</h2><div class="product-points"><div class="product-point"><strong>Display</strong>Touch a colori, 480 × 480 pixel.</div><div class="product-point"><strong>Meteo</strong>Condizioni attuali, previsioni a 5 giorni e dettagli orari.</div><div class="product-point"><strong>Ambiente interno</strong>Temperatura e umidità con storico 24 ore.</div><div class="product-point"><strong>Utility</strong>Radio, radar, calcolatrice, notizie e storico segnalazioni.</div><div class="product-point"><strong>Lingue</strong>Italiano, inglese, tedesco, francese e spagnolo.</div><div class="product-point"><strong>Connessione</strong>Wi‑Fi e pannello web da smartphone o PC.</div></div>
+<section class="photo-gallery"><h2>Foto della Smart Meteo Station</h2><p>Immagini estratte direttamente dal catalogo del prodotto.</p><div class="photo-grid"><div class="photo-card"><img src="assets/meteo-main.jpg" alt="Schermata principale Smart Meteo Station" loading="lazy"><p>Schermata principale</p></div><div class="photo-card"><img src="assets/meteo-wind.jpg" alt="Rosa dei venti Smart Meteo Station" loading="lazy"><p>Rosa dei venti</p></div></div></section>
+<div class="catalog-cta"><h2>Catalogo Smart Meteo Station</h2><p>Il catalogo completo è disponibile come documento PDF scaricabile.</p><div class="catalog-actions"><a href="Smart_Meteo_Station_Catalogo.pdf" class="btn btn-primary" download>Scarica il catalogo PDF</a><a href="Smart_Meteo_Station_Catalogo.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Apri il PDF</a><a href="../index.html#contatti" class="btn btn-ghost">Richiedi informazioni</a></div></div>
+<div class="sidebar-card" style="margin-top:34px"><h3>Caratteristiche tecniche</h3><ul class="specs"><li><strong>Microcontrollore:</strong> ESP32-S3</li><li><strong>Display:</strong> VIEWE 480×480, LVGL v8</li><li><strong>Sensore ambientale:</strong> GY-21 (HTU21D)</li><li><strong>Architettura firmware:</strong> FreeRTOS dual-core</li><li><strong>Case:</strong> progettato su misura e stampato in 3D</li></ul></div>
 </div></section>
 </main>
 <footer class="site-footer"><div class="container footer-inner"><p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p></div></footer>
-<script>
-fetch('meteo-small.b64.txt',{cache:'no-store'})
-  .then(r=>{if(!r.ok) throw new Error('Immagine non disponibile'); return r.text();})
-  .then(b64=>{document.getElementById('meteoCatalogPreview').src='data:image/jpeg;base64,'+b64.trim();})
-  .catch(()=>{document.getElementById('meteoCatalogPreview').style.display='none';});
-</script>
 <script data-goatcounter="https://gdncreations.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><script src="../script.js"></script>
 </body></html>
