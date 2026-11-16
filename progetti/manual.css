@@ -1,0 +1,36 @@
+.manual{max-width:860px;margin:0 auto;padding:48px 24px 80px}
+.manual-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--border);padding-bottom:22px;margin-bottom:28px}
+.manual-head .eyebrow{margin:0 0 6px}
+.manual-head h1{margin:0;font-size:clamp(1.8rem,4vw,2.5rem)}
+.manual-head p{margin:6px 0 0;color:var(--text-dim)}
+.manual-tools{display:flex;gap:10px;flex-wrap:wrap}
+.manual-tools .btn{padding:10px 18px;font-size:.88rem}
+.toc{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 26px;margin:0 0 36px}
+.toc h2{font-size:1.1rem;margin:0 0 10px}
+.toc ol{margin:0;padding-left:22px;columns:2;column-gap:32px;line-height:1.9}
+.toc a{color:var(--accent-2);text-decoration:none}.toc a:hover{text-decoration:underline}
+.manual h2{font-size:1.45rem;margin:44px 0 12px;padding-top:8px;scroll-margin-top:100px}
+.manual h3{font-size:1.08rem;margin:24px 0 8px}
+.manual p,.manual li{line-height:1.7}
+.manual ol,.manual ul{padding-left:22px}
+.manual figure{margin:18px 0 22px;text-align:center}
+.manual figure img{max-width:520px;width:100%;height:auto;border-radius:12px;border:1px solid var(--border)}
+.manual figcaption{font-size:.85rem;color:var(--text-dim);margin-top:6px}
+.callout{border-radius:12px;padding:14px 18px;margin:16px 0;line-height:1.65}
+.callout.warn{background:#fff3e6;border:1px solid #f3cf9f}
+.callout.tip{background:#eaf6fb;border:1px solid #b9e0ef}
+.manual table{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:.95rem}
+.manual th,.manual td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.manual th{background:#f4f2ec;font-weight:700}
+.kbd{display:inline-block;font-weight:700;font-size:.85em;padding:1px 8px;border-radius:6px;background:#1d2f7a;color:#fff;white-space:nowrap}
+@media(max-width:640px){.toc ol{columns:1}}
+@media print{
+  .site-header,.site-footer,.manual-tools,.no-print{display:none!important}
+  body{background:#fff;font-size:10.5pt}
+  .manual{padding:0;max-width:none}
+  .toc{break-after:page}
+  .manual h2{break-after:avoid;margin-top:24px}
+  .manual figure,.manual table,.callout{break-inside:avoid}
+  .manual figure img{max-width:300px}
+  a{color:inherit;text-decoration:none}
+}

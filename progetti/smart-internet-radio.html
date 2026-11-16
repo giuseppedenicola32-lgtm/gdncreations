@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Internet Radio — GDN Creations</title>
+<meta name="description" content="Smart Internet Radio GDN Creations: migliaia di stazioni da tutto il mondo su display touch 4,3&quot;, equalizzatore DSP a 10 bande, analizzatore di spettro, copertine dei brani, meteo, controllo dal browser e aggiornamenti automatici.">
+<meta property="og:title" content="Smart Internet Radio — GDN Creations">
+<meta property="og:description" content="La radio di tutto il mondo, su un touchscreen da 4,3 pollici.">
+<meta property="og:image" content="http://www.gdncreations.com/assets/radio-standby.jpg">
+<link rel="icon" type="image/png" href="../logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+.media-radio{background:linear-gradient(135deg,#0b1b3d 0%,#1d2f7a 55%,#6a1b9a 100%)}
+.radio-hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.radio-hero-img{width:100%;height:auto;border-radius:18px;box-shadow:0 24px 50px -20px rgba(0,0,0,.6);display:block}
+.radio-pills{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.radio-pills li{font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.16);color:#fff}
+.intro{max-width:860px;margin:0 auto 40px}.intro p{font-size:1.08rem;line-height:1.75;color:var(--text-dim)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:28px 0 48px}
+.feature-box{background:#fff;border:1px solid var(--border);border-radius:18px;padding:24px}
+.feature-box h3{margin:0 0 8px;font-size:1.1rem}.feature-box p{margin:0;line-height:1.65;color:var(--text-dim);font-size:.95rem}
+.feature-box .ico{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;background:#e8ecff;color:#2b3fb8}
+.video-wrap{max-width:900px;margin:0 auto 48px}.video-wrap video{width:100%;border-radius:18px;background:#000;display:block;box-shadow:0 20px 40px -24px rgba(31,36,48,.45)}
+.video-wrap p{text-align:center;color:var(--text-dim);font-size:.9rem;margin:10px 0 0}
+.highlight-band{background:#f1f3fb;border-radius:22px;padding:30px;margin:10px 0 48px}.highlight-band h2{margin-top:0}.highlight-band p{line-height:1.7;color:var(--text-dim)}
+.photo-gallery h2{text-align:center}.photo-gallery>p{text-align:center;max-width:760px;margin:0 auto 24px;color:var(--text-dim)}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.photo-card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:10px;margin:0}
+.photo-card a{display:block}.photo-card img{display:block;width:100%;height:auto;border-radius:12px;background:#0b1b3d}
+.photo-card figcaption{text-align:center;margin:10px 4px 4px;font-weight:600;font-size:.95rem}
+.photo-card figcaption span{display:block;font-weight:400;color:var(--text-dim);font-size:.85rem}
+.two-col{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;margin:48px 0 0;align-items:start}
+.manual-cta{padding:30px;border:1px solid var(--border);border-radius:22px;text-align:center;background:#fff;margin-top:48px}
+.manual-cta h2{margin-top:0}.manual-cta p{max-width:760px;margin:0 auto 18px;line-height:1.7;color:var(--text-dim)}
+.cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.note{font-size:.85rem;color:var(--text-dim)}
+.sound-band{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;background:linear-gradient(135deg,#0b1b3d,#1d2f7a);color:#fff;border-radius:22px;padding:36px;margin:0 0 28px}
+.sound-band h2{color:#fff;margin:6px 0 14px}.sound-band p{color:rgba(255,255,255,.85);line-height:1.7;margin:0 0 14px}
+.sound-eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7de7ff}
+.sound-list{margin:0;padding-left:20px;line-height:1.7;color:rgba(255,255,255,.85)}.sound-list li{margin-bottom:6px}.sound-list strong{color:#fff}
+.sound-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sound-stats div{background:rgba(255,255,255,.08);border:1px solid rgba(125,231,255,.3);border-radius:16px;padding:18px;text-align:center}
+.sound-stats strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#7de7ff}.sound-stats span{font-size:.85rem;color:rgba(255,255,255,.8)}
+.colors-band{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--border);border-radius:22px;padding:30px;margin:0 0 28px}
+.colors-band h2{margin-top:0}.colors-band p{margin:0;line-height:1.7;color:var(--text-dim)}
+.swatches{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.swatches span{width:44px;height:44px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--border),0 6px 14px -6px rgba(0,0,0,.35)}
+@media(max-width:900px){.sound-band,.colors-band{grid-template-columns:1fr}}
+@media(max-width:900px){.feature-grid,.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.radio-hero-grid,.two-col{grid-template-columns:1fr}}
+@media(max-width:600px){.feature-grid,.photo-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner"><a href="../index.html" class="logo"><img src="../logo.png" alt="GDN Creations" height="56"></a><nav><a href="../index.html#progetti">Progetti</a><a href="../index.html#chi-sono">Chi sono</a><a href="../index.html#contatti">Contatti</a></nav></div></header>
+<main>
+
+<section class="project-hero media-radio">
+  <div class="container radio-hero-grid">
+    <div>
+      <a href="../index.html#progetti" class="back-link">&larr; Tutti i progetti</a>
+      <div class="card-tag">Audio</div>
+      <h1>Smart Internet Radio</h1>
+      <p class="hero-sub">La radio di tutto il mondo, su un touchscreen da 4,3 pollici.</p>
+      <p class="hero-sub" style="margin-top:12px">Migliaia di emittenti, suono stereo equalizzato, copertine dei brani e meteo, in un oggetto da scrivania progettato e costruito da GDN Creations.</p>
+      <ul class="radio-pills"><li>2 × 30 W stereo</li><li>Display touch 800×480</li><li>Encoder rotativo</li><li>EQ DSP 10 bande</li><li>30 preset</li><li>6 lingue</li><li>Firmware aggiornato in automatico</li></ul>
+    </div>
+    <img class="radio-hero-img" src="../assets/radio-standby.jpg" alt="Smart Internet Radio GDN Creations con due altoparlanti, display centrale e manopola" width="1600" height="655">
+  </div>
+</section>
+
+<section class="project-body"><div class="container">
+
+<div class="intro">
+  <h2>Una radio moderna con l'anima di un oggetto d'epoca</h2>
+  <p>Smart Internet Radio unisce il piacere di una radio da tavolo, con due altoparlanti e una grande manopola, alla libertà dello streaming. Dal display touch a colori si cercano le stazioni di tutto il mondo per nome, Paese o genere, si salvano le preferite su 30 tasti preset e si regola il suono con un vero equalizzatore digitale a 10 bande per canale.</p>
+  <p>Durante l'ascolto lo schermo mostra il titolo del brano, la copertina dell'album, il logo dell'emittente e un analizzatore di spettro stereo che si muove con la musica. In standby diventa un elegante orologio da scrivania con data e meteo. Tutto si controlla con il touch, con la manopola oppure dallo smartphone.</p>
+</div>
+
+<div class="video-wrap">
+  <video controls preload="metadata" playsinline poster="../assets/radio-riproduzione.jpg">
+    <source src="../assets/radio-video.mp4" type="video/mp4">
+    Il tuo browser non riproduce video HTML5. <a href="../assets/radio-video.mp4">Scarica il video</a>.
+  </video>
+  <p>Smart Internet Radio in funzione</p>
+</div>
+
+<h2>Cosa sa fare</h2>
+<div class="feature-grid">
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Stazioni da tutto il mondo</h3><p>Ricerca nel catalogo mondiale Radio Browser per nome completo o parziale, con filtri facoltativi per Paese e genere. Si può cercare anche un genere o un tag libero.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 3h14v18l-7-4-7 4z"/></svg></div><h3>30 preset</h3><p>Trenta memorie su tre pagine: un tocco su un tasto vuoto salva la stazione in ascolto, un tocco su un tasto pieno la riproduce. All'accensione la radio riparte dall'ultima stazione ascoltata.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg></div><h3>Equalizzatore DSP a 10 bande</h3><p>Un vero equalizzatore digitale da 31 Hz a 16 kHz, separato per il canale sinistro e destro, con preset Flat, Bass, Voce, Rock, Pop, Jazz, Classica e Loudness.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V12M8 20V6M12 20v-9M16 20V4M20 20v-6"/></svg></div><h3>Spettro e VU meter</h3><p>Analizzatore di spettro stereo a 24 bande calcolato sul segnale reale, con indicatore di picco, oppure VU meter. Tre stili di schermata: Classica, Hi-Fi e Minimale.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Copertine e loghi</h3><p>Quando l'emittente trasmette artista e titolo, la radio cerca la copertina dell'album e la mostra a tutto schermo. Altrimenti mostra il logo della stazione.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Orologio e meteo in standby</h3><p>In standby la musica si ferma e il display mostra ora, data, temperatura e condizioni meteo della tua città, scelta a mano o ricavata in automatico.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Controllo dal browser</h3><p>Da smartphone, tablet o PC sulla stessa rete Wi-Fi: play e stop, volume, preset e ricerca delle stazioni. Puoi anche ascoltare la stessa stazione sul computer.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div><h3>Aggiornamenti automatici</h3><p>La radio si aggiorna in automatico via Internet: controlla da sola l'arrivo di nuovi firmware, li scarica e li verifica. Tu confermi con un tocco e ricevi subito nuove funzioni e miglioramenti, senza cavi né computer.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></div><h3>Pensata per la notte</h3><p>Timer di spegnimento da 15 a 90 minuti, luminosità ridotta automatica nelle ore notturne e volume di accensione regolabile.</p></div>
+</div>
+
+<div class="sound-band">
+  <div>
+    <span class="sound-eyebrow">Suono</span>
+    <h2>Potenza vera, suono Hi-Fi</h2>
+    <p>Il cuore audio della radio è un amplificatore digitale in classe D da <strong>2 × 30 W</strong> basato sul Texas Instruments TAS5756M. Il segnale arriva in forma digitale, tramite I2S, dal processore all'amplificatore, senza passaggi analogici intermedi che aggiungono rumore e ronzii. Il risultato è un suono pulito e dettagliato anche ad alto volume.</p>
+    <ul class="sound-list">
+      <li><strong>Potenza musicale</strong> fino a 2 × 30 W con alimentazione a 24 V, abbondante per riempire un soggiorno; con 12 V la potenza resta adatta all'ascolto domestico.</li>
+      <li><strong>Stereo reale</strong> con due altoparlanti Visaton da 8 Ω a larga banda, uno per canale, ai lati del display.</li>
+      <li><strong>Catena digitale</strong> dallo stream all'amplificatore, con DAC integrato ad alta risoluzione.</li>
+      <li><strong>Equalizzatore DSP</strong> a 10 bande per canale con protezione automatica dalla saturazione: anche con i bassi in evidenza il suono non distorce.</li>
+      <li><strong>Formati ad alta qualità</strong>, compreso FLAC senza perdita, per le emittenti che lo trasmettono.</li>
+    </ul>
+  </div>
+  <div class="sound-stats">
+    <div><strong>2 × 30 W</strong><span>potenza musicale</span></div>
+    <div><strong>Classe D</strong><span>amplificatore digitale TAS5756M</span></div>
+    <div><strong>10 × 2</strong><span>bande di equalizzazione</span></div>
+    <div><strong>FLAC</strong><span>lossless supportato</span></div>
+  </div>
+</div>
+
+<div class="colors-band">
+  <div>
+    <h2>Scegli il tuo colore</h2>
+    <p>Il case è progettato e stampato in 3D da GDN Creations, quindi la Smart Internet Radio si può avere in <strong>vari colori</strong>: dal bianco della versione in foto a tinte che si abbinano al tuo arredamento. Indica il colore preferito al momento della richiesta.</p>
+  </div>
+  <div class="swatches" aria-label="Esempi di colori disponibili">
+    <span style="background:#f4f1ea" title="Bianco"></span><span style="background:#1f2430" title="Nero"></span><span style="background:#8a8f98" title="Grigio"></span><span style="background:#b5462f" title="Rosso"></span><span style="background:#1d4e89" title="Blu"></span><span style="background:#2f7d5b" title="Verde"></span><span style="background:#d9b26f" title="Sabbia"></span>
+  </div>
+</div>
+
+<div class="highlight-band">
+  <h2>Facile dal primo minuto</h2>
+  <p>Alla prima accensione una procedura guidata chiede la lingua (italiano, inglese, tedesco, francese, spagnolo o ucraino) e la rete Wi-Fi, con una tastiera completa sullo schermo. Poi la radio è pronta: agli avvii successivi riparte da sola con l'ultima stazione ascoltata.</p>
+  <p>Ogni funzione si usa sia con il touch sia con la manopola: ruota per spostarti, premi per confermare.</p>
+  <p><strong>E non invecchia:</strong> gli aggiornamenti del firmware arrivano in automatico via Internet. La radio controlla periodicamente se GDN Creations ha pubblicato una nuova versione e la propone sullo schermo, pronta da installare con un tocco. Preset e impostazioni restano al loro posto.</p>
+</div>
+
+<section class="photo-gallery" style="padding:0">
+  <h2>Foto della Smart Internet Radio</h2>
+  <p>Le schermate reali del dispositivo. Tocca una foto per vederla ingrandita.</p>
+  <div class="photo-grid">
+    <figure class="photo-card"><a href="../assets/radio-riproduzione.jpg"><img src="../assets/radio-riproduzione.jpg" alt="Schermata di riproduzione con copertina, titolo del brano e analizzatore di spettro" loading="lazy" width="1600" height="1200"></a><figcaption>In riproduzione<span>Copertina, titolo e spettro stereo</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-preset.jpg"><img src="../assets/radio-preset.jpg" alt="Pagina dei preset con le stazioni memorizzate" loading="lazy" width="1600" height="1200"></a><figcaption>Preset<span>30 memorie su tre pagine</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-ricerca.jpg"><img src="../assets/radio-ricerca.jpg" alt="Ricerca stazioni per nome, Paese e genere" loading="lazy" width="1600" height="1200"></a><figcaption>Cerca radio<span>Catalogo mondiale con filtri</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-equalizzatore.jpg"><img src="../assets/radio-equalizzatore.jpg" alt="Equalizzatore a 10 bande con preset" loading="lazy" width="1600" height="1200"></a><figcaption>Equalizzatore<span>10 bande, stereo L/R</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-setup.jpg"><img src="../assets/radio-setup.jpg" alt="Menu Setup" loading="lazy" width="1600" height="1200"></a><figcaption>Menu Setup<span>Tutte le impostazioni in un tocco</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-display.jpg"><img src="../assets/radio-display.jpg" alt="Impostazioni display e aspetto" loading="lazy" width="1600" height="1200"></a><figcaption>Display e aspetto<span>Spettro, VU meter, stili e luminosità</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-audio-notte.jpg"><img src="../assets/radio-audio-notte.jpg" alt="Impostazioni audio e notte" loading="lazy" width="1600" height="1200"></a><figcaption>Audio e notte<span>Volume iniziale, timer, luminosità notturna</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-wifi.jpg"><img src="../assets/radio-wifi.jpg" alt="Schermata connessione Wi-Fi" loading="lazy" width="1600" height="1200"></a><figcaption>Wi-Fi<span>Stato della rete e indirizzo IP</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-lingua.jpg"><img src="../assets/radio-lingua.jpg" alt="Scelta della lingua" loading="lazy" width="1600" height="1200"></a><figcaption>Lingua<span>Sei lingue disponibili</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-meteo-citta.jpg"><img src="../assets/radio-meteo-citta.jpg" alt="Tastiera per inserire la città del meteo" loading="lazy" width="1600" height="1200"></a><figcaption>Meteo<span>Città scelta o automatica</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-firmware.jpg"><img src="../assets/radio-firmware.jpg" alt="Schermata aggiornamento firmware" loading="lazy" width="1600" height="1200"></a><figcaption>Aggiornamento firmware<span>Controllo e installazione dal menu</span></figcaption></figure>
+    <figure class="photo-card"><a href="../assets/radio-standby.jpg"><img src="../assets/radio-standby.jpg" alt="Radio in standby con orologio e meteo" loading="lazy" width="1600" height="655"></a><figcaption>Standby<span>Orologio, data e meteo</span></figcaption></figure>
+  </div>
+</section>
+
+<div class="two-col">
+  <div class="sidebar-card">
+    <h3>Caratteristiche tecniche</h3>
+    <ul class="specs">
+      <li><strong>Microcontrollore:</strong> ESP32-S3 con 16 MB di flash e PSRAM</li>
+      <li><strong>Display:</strong> touch capacitivo IPS da 4,3", 800×480 pixel (VIEWE)</li>
+      <li><strong>Controlli:</strong> touchscreen e encoder rotativo con pulsante</li>
+      <li><strong>Amplificatore:</strong> classe D stereo 2 × 30 W, Texas Instruments TAS5756M con ingresso digitale I2S e DAC integrato</li>
+      <li><strong>Altoparlanti:</strong> due altoparlanti Visaton a larga banda da 8 Ω</li>
+      <li><strong>Formati audio:</strong> MP3, AAC, FLAC, Opus e Vorbis, in HTTP e HTTPS</li>
+      <li><strong>Elaborazione audio:</strong> equalizzatore digitale 10 bande × 2 canali, spettro FFT a 24 bande</li>
+      <li><strong>Connettività:</strong> Wi-Fi 2,4 GHz, pagina web di controllo, aggiornamento firmware via rete</li>
+      <li><strong>Lingue:</strong> italiano, inglese, tedesco, francese, spagnolo, ucraino</li>
+      <li><strong>Alimentazione:</strong> alimentatore esterno 12–24 V DC (24 V per la piena potenza)</li>
+      <li><strong>Case:</strong> progettato su misura e stampato in 3D, disponibile in vari colori</li>
+    </ul>
+  </div>
+  <div class="sidebar-card">
+    <h3>Servizi utilizzati</h3>
+    <ul class="specs">
+      <li><strong>Catalogo stazioni:</strong> Radio Browser, archivio pubblico mondiale</li>
+      <li><strong>Copertine:</strong> Deezer, con iTunes Search come alternativa</li>
+      <li><strong>Meteo:</strong> Open-Meteo</li>
+      <li><strong>Ora:</strong> sincronizzazione automatica via Internet (NTP)</li>
+    </ul>
+    <h3>Tecnologie</h3>
+    <ul class="tags"><li>ESP32-S3</li><li>LVGL</li><li>FreeRTOS</li><li>I2S</li><li>DSP</li><li>OTA</li><li>3D print</li></ul>
+  </div>
+</div>
+
+<div class="manual-cta">
+  <h2>Manuale di istruzioni</h2>
+  <p>Guida completa all'installazione, alla configurazione e all'uso quotidiano, disponibile in italiano e in inglese. Si può leggere online, stampare o scaricare in PDF.</p>
+  <div class="cta-actions">
+    <a href="smart-internet-radio-manuale.html" class="btn btn-primary">Manuale in italiano</a>
+    <a href="../assets/Smart_Internet_Radio_GDN_Manuale_Italiano.pdf" class="btn btn-ghost" download>Scarica PDF (IT)</a>
+    <a href="smart-internet-radio-manual-en.html" class="btn btn-primary">User manual (English)</a>
+    <a href="../assets/Smart_Internet_Radio_GDN_User_Manual_EN.pdf" class="btn btn-ghost" download>Download PDF (EN)</a>
+  </div>
+</div>
+
+<div class="manual-cta" style="margin-top:24px">
+  <h2>Ti interessa?</h2>
+  <p>Per informazioni, disponibilità o versioni personalizzate scrivi a GDN Creations.</p>
+  <div class="cta-actions"><a class="btn btn-primary" href="mailto:info@gdncreations.com?subject=Smart%20Internet%20Radio">info@gdncreations.com</a></div>
+</div>
+
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p>&copy; <span id="year"></span> GDN Creations. Tutti i diritti riservati.</p></div></footer>
+<script data-goatcounter="https://gdncreations.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><script src="../script.js"></script>
+</body></html>
