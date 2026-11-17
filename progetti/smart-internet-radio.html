@@ -44,6 +44,18 @@
 .sound-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .sound-stats div{background:rgba(255,255,255,.08);border:1px solid rgba(125,231,255,.3);border-radius:16px;padding:18px;text-align:center}
 .sound-stats strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.6rem;color:#7de7ff}.sound-stats span{font-size:.85rem;color:rgba(255,255,255,.8)}
+.remote-band{background:#f1f3fb;border-radius:22px;padding:34px;margin:0 0 28px}
+.remote-band h2{margin:6px 0 12px}.remote-lead{color:var(--text-dim);line-height:1.75;max-width:860px;margin:0 0 24px}
+.remote-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.remote-step{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px;position:relative}
+.remote-step .num{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:#2b3fb8;color:#fff;font-weight:700;margin-bottom:10px}
+.remote-step h3{margin:0 0 8px;font-size:1.05rem}.remote-step p{margin:0;color:var(--text-dim);line-height:1.65;font-size:.95rem}
+.remote-band code{background:#e3e8ff;color:#1d2f7a;padding:1px 6px;border-radius:6px;font-size:.9em;white-space:nowrap}
+.remote-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.remote-grid div{background:#fff;border:1px solid var(--border);border-radius:14px;padding:16px;font-size:.9rem;color:var(--text-dim);line-height:1.55}
+.remote-grid strong{display:block;color:var(--text);margin-bottom:4px;font-size:.98rem}
+@media(max-width:900px){.remote-steps{grid-template-columns:1fr}.remote-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.remote-grid{grid-template-columns:1fr}.remote-band{padding:22px}}
 .colors-band{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:center;background:#fff;border:1px solid var(--border);border-radius:22px;padding:30px;margin:0 0 28px}
 .colors-band h2{margin-top:0}.colors-band p{margin:0;line-height:1.7;color:var(--text-dim)}
 .swatches{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.swatches span{width:44px;height:44px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--border),0 6px 14px -6px rgba(0,0,0,.35)}
@@ -64,7 +76,7 @@
       <h1>Smart Internet Radio</h1>
       <p class="hero-sub">La radio di tutto il mondo, su un touchscreen da 4,3 pollici.</p>
       <p class="hero-sub" style="margin-top:12px">Migliaia di emittenti, suono stereo equalizzato, copertine dei brani e meteo, in un oggetto da scrivania progettato e costruito da GDN Creations.</p>
-      <ul class="radio-pills"><li>2 × 30 W stereo</li><li>Display touch 800×480</li><li>Manopola rotativa</li><li>EQ DSP 10 bande</li><li>30 preset</li><li>6 lingue</li><li>Firmware aggiornato in automatico</li></ul>
+      <ul class="radio-pills"><li>2 × 30 W stereo</li><li>Display touch 800×480</li><li>Manopola rotativa</li><li>EQ DSP 10 bande</li><li>30 preset</li><li>6 lingue</li><li>Comando da smartphone e PC</li><li>Firmware aggiornato in automatico</li></ul>
     </div>
     <img class="radio-hero-img" src="../assets/radio-standby-sm.jpg" alt="Smart Internet Radio GDN Creations con due altoparlanti, display centrale e manopola" width="1200" height="491">
   </div>
@@ -94,7 +106,7 @@
   <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V12M8 20V6M12 20v-9M16 20V4M20 20v-6"/></svg></div><h3>Spettro e VU meter</h3><p>Analizzatore di spettro stereo a 24 bande calcolato sul segnale reale, con indicatore di picco, oppure VU meter. Tre stili di schermata: Classica, Hi-Fi e Minimale.</p></div>
   <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Copertine e loghi</h3><p>Quando l'emittente trasmette artista e titolo, la radio cerca la copertina dell'album e la mostra a tutto schermo. Altrimenti mostra il logo della stazione.</p></div>
   <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Orologio e meteo in standby</h3><p>In standby la musica si ferma e il display mostra ora, data, temperatura e condizioni meteo della tua città, scelta a mano o ricavata in automatico.</p></div>
-  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Controllo dal browser</h3><p>Da smartphone, tablet o PC sulla stessa rete Wi-Fi: play e stop, volume, preset e ricerca delle stazioni. Puoi anche ascoltare la stessa stazione sul computer.</p></div>
+  <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Telecomando su smartphone e PC</h3><p>Da smartphone, tablet o computer collegati alla stessa rete Wi-Fi gestisci tutta la radio dal browser, senza installare app: volume, preset, ricerca, equalizzatore e aggiornamenti.</p></div>
   <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div><h3>Aggiornamenti automatici</h3><p>La radio si aggiorna in automatico via Internet: controlla da sola l'arrivo di nuovi firmware, li scarica e li verifica. Tu confermi con un tocco e ricevi subito nuove funzioni e miglioramenti, senza cavi né computer.</p></div>
   <div class="feature-box"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></div><h3>Pensata per la notte</h3><p>Timer di spegnimento da 15 a 90 minuti, luminosità ridotta automatica nelle ore notturne e volume di accensione regolabile.</p></div>
 </div>
@@ -128,6 +140,31 @@
   <div class="swatches" aria-label="Esempi di colori disponibili">
     <span style="background:#f4f1ea" title="Bianco"></span><span style="background:#1f2430" title="Nero"></span><span style="background:#8a8f98" title="Grigio"></span><span style="background:#b5462f" title="Rosso"></span><span style="background:#1d4e89" title="Blu"></span><span style="background:#2f7d5b" title="Verde"></span><span style="background:#d9b26f" title="Sabbia"></span>
   </div>
+</div>
+
+<div class="remote-band" id="telecomando">
+  <span class="sound-eyebrow" style="color:#2b3fb8">Smartphone e PC</span>
+  <h2>La radio si comanda anche dal telefono e dal computer</h2>
+  <p class="remote-lead">La Smart Internet Radio contiene una pagina di controllo che si apre con il browser di qualsiasi smartphone, tablet o computer: Chrome, Safari, Edge o Firefox. Non serve installare app né creare account. L'unica condizione è che il dispositivo sia collegato <strong>alla stessa rete Wi-Fi della radio</strong>, cioè alla rete di casa.</p>
+
+  <div class="remote-steps">
+    <div class="remote-step"><span class="num">1</span><h3>Trova l'indirizzo IP</h3><p>Sulla radio apri il menu <strong>SETUP</strong> (tasto PRESET → MENU SETUP, oppure SETUP dall'orologio di standby) e tocca <strong>WI-FI / WEB</strong>. Sotto il nome della rete compare l'indirizzo della radio, per esempio <code>IP: 192.168.1.80</code>. Lo stesso indirizzo appare anche alla prima connessione, nella schermata <em>RETE CONNESSA</em>.</p></div>
+    <div class="remote-step"><span class="num">2</span><h3>Aprilo nel browser</h3><p>Sul telefono o sul PC apri il browser e scrivi l'indirizzo nella barra in alto, preceduto da <code>http://</code>: per esempio <code>http://192.168.1.80</code>. Non servono «www» né password.</p></div>
+    <div class="remote-step"><span class="num">3</span><h3>Salvalo tra i preferiti</h3><p>Sullo smartphone usa <em>Aggiungi a schermata Home</em>: comparirà un'icona come quella di un'app. Sul PC aggiungi la pagina ai preferiti. Dalla volta dopo basta un tocco.</p></div>
+  </div>
+
+  <h3 style="margin:30px 0 12px">Cosa puoi fare dalla pagina di controllo</h3>
+  <div class="remote-grid">
+    <div><strong>In onda</strong>Nome della stazione, logo, artista e titolo del brano, aggiornati in tempo reale.</div>
+    <div><strong>Comandi</strong>Play, stop, muto, standby e accensione, volume con cursore.</div>
+    <div><strong>30 preset</strong>Avvia una stazione con un tocco, cambiale numero o cancellala.</div>
+    <div><strong>Cerca stazioni</strong>Per nome, Paese e genere; ascoltala subito o salvala nel preset che vuoi.</div>
+    <div><strong>Equalizzatore</strong>10 bande per canale e preset sonori, con le stesse regolazioni del display.</div>
+    <div><strong>Spettro e VU meter</strong>I livelli audio della radio, animati in tempo reale sul telefono o sul PC.</div>
+    <div><strong>Ascolto sul computer</strong>Ascolta la stessa stazione anche dal PC o dal telefono, con un volume separato.</div>
+    <div><strong>Aggiornamenti</strong>Vedi la versione installata, controlla se ce n'è una nuova e installala.</div>
+  </div>
+  <p class="note" style="margin-top:16px">Le modifiche fatte dal telefono compaiono subito sul display della radio, e viceversa. Si possono collegare più dispositivi contemporaneamente. La pagina funziona solo all'interno della rete di casa e non è raggiungibile da Internet.</p>
 </div>
 
 <div class="highlight-band">

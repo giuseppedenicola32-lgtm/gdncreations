@@ -41,7 +41,7 @@
     <li><a href="#equalizzatore">Equalizzatore</a></li>
     <li><a href="#display">Display e aspetto</a></li>
     <li><a href="#audio-notte">Audio e notte</a></li>
-    <li><a href="#wifi">Wi-Fi e controllo dal browser</a></li>
+    <li><a href="#wifi">Wi-Fi e controllo da smartphone e PC</a></li>
     <li><a href="#lingua">Lingua</a></li>
     <li><a href="#meteo">Meteo</a></li>
     <li><a href="#standby">Standby e orologio</a></li>
@@ -167,22 +167,58 @@
 </ul>
 <p>Premere <span class="kbd">SALVA IMPOSTAZIONI</span> per memorizzare le scelte.</p>
 
-<h2 id="wifi">12. Wi-Fi e controllo dal browser</h2>
+<h2 id="wifi">12. Wi-Fi e controllo da smartphone e PC</h2>
 <figure><img src="../assets/radio-wifi-sm.jpg" alt="Schermata Wi-Fi"><figcaption>Pagina CONNESSIONE WI-FI con nome della rete, indirizzo IP e qualità del segnale.</figcaption></figure>
 <p><strong>SETUP → WI-FI / WEB</strong> mostra la rete collegata, l'indirizzo IP della radio e la potenza del segnale (RSSI). Per cambiare rete premere <span class="kbd">DISSOCIA RETE</span>: la radio torna alla ricerca delle reti e la vecchia rete resta salvata.</p>
-<h3>Controllo da smartphone, tablet o PC</h3>
+<h3>Gestire la radio da smartphone, tablet o PC</h3>
+<p>La radio contiene una <strong>pagina di controllo</strong> che si apre con il browser di qualsiasi smartphone, tablet o computer (Chrome, Safari, Edge, Firefox…). Non serve installare app né creare account. Dalla pagina si comanda tutta la radio, come da un telecomando.</p>
+<div class="callout warn"><strong>Condizione indispensabile:</strong> il telefono o il computer deve essere collegato alla <strong>stessa rete Wi-Fi della radio</strong>, cioè alla rete di casa. Con i dati mobili del telefono (4G/5G) o con la rete "ospiti" del router la pagina non si apre.</div>
+
+<h3>Passo 1 — Trovare l'indirizzo IP della radio</h3>
+<p>L'indirizzo IP è il "numero di casa" della radio nella rete, per esempio <code>192.168.1.80</code>. Ci sono tre modi per leggerlo:</p>
 <ol>
-  <li>Collegare il telefono o il computer alla <strong>stessa rete Wi-Fi</strong> della radio.</li>
-  <li>Aprire il browser e digitare l'indirizzo IP mostrato dalla radio, per esempio <code>http://192.168.1.80</code>.</li>
+  <li><strong>Dal menu della radio</strong> (il modo più semplice): aprire il menu SETUP (dalla schermata di ascolto toccare <span class="kbd">PRESET</span> e poi <span class="kbd">MENU SETUP</span>; dall'orologio di standby toccare <span class="kbd">SETUP</span>) e scegliere <span class="kbd">WI-FI / WEB</span>. Nella schermata <em>CONNESSIONE WI-FI</em> compaiono il nome della rete e, subito sotto, la riga <strong>IP: 192.168.1.80</strong>, come nella foto qui sopra.</li>
+  <li><strong>Alla prima connessione</strong>: quando la procedura guidata si collega alla rete, la schermata <em>RETE CONNESSA</em> mostra l'indirizzo in grande (<strong>IP 192.168.1.80</strong>). Conviene annotarlo subito.</li>
+  <li><strong>Dal router</strong>: nell'app o nella pagina di gestione del router, alla voce "Dispositivi connessi", la radio compare con il suo indirizzo IP.</li>
 </ol>
-<p>Dalla pagina web si può:</p>
+
+<h3>Passo 2 — Aprire la pagina dallo smartphone</h3>
+<ol>
+  <li>Verificare che il Wi-Fi del telefono sia attivo e collegato alla rete di casa.</li>
+  <li>Aprire il browser (Safari su iPhone, Chrome su Android).</li>
+  <li>Toccare la barra degli indirizzi in alto e scrivere <code>http://</code> seguito dall'indirizzo IP, per esempio <code>http://192.168.1.80</code>. Non scrivere "www" e non usare la casella di ricerca di Google.</li>
+  <li>Confermare: si apre la pagina <em>Smart Internet Radio</em> con la stazione in onda.</li>
+  <li><strong>Per averla sempre a portata di mano</strong>: su iPhone toccare il pulsante Condividi e scegliere <em>Aggiungi alla schermata Home</em>; su Android aprire il menu ⋮ di Chrome e scegliere <em>Aggiungi a schermata Home</em>. Comparirà un'icona come quella di un'app.</li>
+</ol>
+
+<h3>Passo 3 — Aprire la pagina dal computer</h3>
+<ol>
+  <li>Verificare che il PC o il Mac sia collegato alla rete di casa, via Wi-Fi o con il cavo al router.</li>
+  <li>Aprire il browser e scrivere nella barra degli indirizzi <code>http://192.168.1.80</code>, sostituendo il numero con quello della propria radio, poi premere Invio.</li>
+  <li>Aggiungere la pagina ai Preferiti (Ctrl+D su Windows, Cmd+D su Mac) per ritrovarla con un clic.</li>
+</ol>
+
+<h3>Cosa si può fare dalla pagina di controllo</h3>
+<table>
+  <tr><th>Sezione</th><th>Funzioni</th></tr>
+  <tr><td>In onda</td><td>Nome e logo della stazione, artista e titolo del brano, stato della radio (in riproduzione, ferma, in standby).</td></tr>
+  <tr><td>Comandi</td><td><span class="kbd">▶</span> avvia, <span class="kbd">■</span> ferma, <span class="kbd">MUTE</span> toglie l'audio, <span class="kbd">STANDBY</span> spegne l'audio e mostra l'orologio (diventa <span class="kbd">ACCENDI</span> per riaccendere). Il cursore regola il volume della radio.</td></tr>
+  <tr><td>Ascolto sul computer</td><td><span class="kbd">ASCOLTA</span> riproduce la stessa stazione sul telefono o sul PC, con un volume separato; <span class="kbd">STOP PC</span> la ferma. <em>APRI IN VLC</em> apre la stazione nel programma VLC, utile se il browser non riesce a riprodurla.</td></tr>
+  <tr><td>Preset</td><td>Tre pagine (1–10, 11–20, 21–30). Toccare il nome per ascoltare la stazione, <span class="kbd">#</span> per cambiarle numero, <span class="kbd">X</span> per cancellarla.</td></tr>
+  <tr><td>Analizzatore di spettro</td><td>Spettro e due VU meter (sinistro e destro) che si muovono con la musica in tempo reale.</td></tr>
+  <tr><td>Equalizzatore 10 bande</td><td>Cursori per ogni banda e canale, casella <em>Canali L e R collegati</em> e pulsanti dei preset sonori.</td></tr>
+  <tr><td>Cerca stazioni nel mondo</td><td>Scrivere il nome (anche parziale) e/o scegliere Paese e genere, poi <span class="kbd">CERCA</span>. Selezionare una stazione dall'elenco e premere <span class="kbd">PLAY RADIO</span> per ascoltarla o <span class="kbd">SALVA NEI PRESET</span> per memorizzarla nel numero che si preferisce. <span class="kbd">PRECEDENTI</span> e <span class="kbd">SUCCESSIVE</span> sfogliano i risultati.</td></tr>
+  <tr><td>Aggiornamento firmware</td><td>Mostra la versione installata; <span class="kbd">CONTROLLA ORA</span> verifica se ce n'è una nuova e <span class="kbd">INSTALLA</span> la installa.</td></tr>
+</table>
+<p>Ogni modifica fatta dalla pagina compare subito sul display della radio, e viceversa. Si possono usare più telefoni e computer contemporaneamente.</p>
+
+<h3>Se la pagina non si apre</h3>
 <ul>
-  <li>avviare e fermare la riproduzione, regolare il volume e attivare il muto;</li>
-  <li>vedere stazione, brano in onda e copertina;</li>
-  <li>cercare stazioni nel catalogo mondiale e salvarle nei preset, o cancellare un preset;</li>
-  <li>ascoltare la stessa stazione direttamente sul computer, con volume indipendente. Il collegamento <em>APRI IN VLC</em> serve per le emittenti che il browser non riesce a riprodurre.</li>
+  <li>Controllare che telefono o PC siano sulla <strong>stessa rete Wi-Fi</strong> della radio e che i dati mobili non siano in uso.</li>
+  <li>Controllare di aver scritto <code>http://</code> e non <code>https://</code>, e che i numeri dell'indirizzo siano esatti.</li>
+  <li>Dopo un riavvio del router l'indirizzo della radio può cambiare: rileggerlo in <strong>SETUP → WI-FI / WEB</strong> e aggiornare il preferito. Per tenerlo sempre uguale si può "riservare" l'indirizzo alla radio nelle impostazioni del router (funzione DHCP statico o "IP fisso").</li>
+  <li>La pagina funziona solo all'interno della rete di casa: fuori casa non è raggiungibile.</li>
 </ul>
-<div class="callout tip">Segnare l'indirizzo della pagina tra i preferiti del telefono, o aggiungerlo alla schermata Home, per averlo sempre a portata di mano.</div>
 
 <h2 id="lingua">13. Lingua</h2>
 <p><strong>SETUP → LINGUA</strong>: scegliere tra italiano, English, Deutsch, Français, Español e Українська. La radio si riavvia per applicare la nuova lingua.</p>

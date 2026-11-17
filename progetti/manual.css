@@ -30,6 +30,9 @@
   .manual{padding:0;max-width:none}
   .toc{break-after:page}
   .manual h2{break-after:avoid;margin-top:24px}
+  .manual h3{break-after:avoid}
+  .manual table{break-inside:auto}
+  .manual tr{break-inside:avoid}
   .manual figure,.manual table,.callout{break-inside:avoid}
   .manual figure img{max-width:300px}
   a{color:inherit;text-decoration:none}

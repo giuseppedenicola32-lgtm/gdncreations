@@ -43,7 +43,7 @@
     <li><a href="#equalizer">Equalizer</a></li>
     <li><a href="#display">Display &amp; style</a></li>
     <li><a href="#audio-night">Audio &amp; night</a></li>
-    <li><a href="#wifi">Wi-Fi and browser control</a></li>
+    <li><a href="#wifi">Wi-Fi and control from smartphone and PC</a></li>
     <li><a href="#language">Language</a></li>
     <li><a href="#weather">Weather</a></li>
     <li><a href="#standby">Standby and clock</a></li>
@@ -169,22 +169,59 @@
 </ul>
 <p>Press <span class="kbd">SAVE SETTINGS</span> to store your choices.</p>
 
-<h2 id="wifi">12. Wi-Fi and browser control</h2>
+<h2 id="wifi">12. Wi-Fi and control from smartphone and PC</h2>
 <figure><img src="../assets/radio-wifi-sm.jpg" alt="Wi-Fi screen"><figcaption>The Wi-Fi page with network name, IP address and signal quality.</figcaption></figure>
 <p><strong>SETUP → WI-FI / WEB</strong> shows the connected network, the radio's IP address and the signal strength (RSSI). To change network, press <span class="kbd">FORGET NETWORK</span>: the radio returns to the network search and keeps the old network saved.</p>
-<h3>Control from a smartphone, tablet or PC</h3>
+<h3>Controlling the radio from a smartphone, tablet or PC</h3>
+<p>The radio has a built-in <strong>control page</strong> that opens in the browser of any smartphone, tablet or computer (Chrome, Safari, Edge, Firefox…). No app to install and no account to create. From this page you can operate the whole radio, just like a remote control.</p>
+<div class="callout warn"><strong>Essential:</strong> the phone or computer must be connected to the <strong>same Wi-Fi network as the radio</strong>, i.e. your home network. The page will not open over mobile data (4G/5G) or from the router's "guest" network.</div>
+
+<h3>Step 1 — Find the radio's IP address</h3>
+<p>The IP address is the radio's "house number" on your network, for example <code>192.168.1.80</code>. There are three ways to read it:</p>
 <ol>
-  <li>Connect the phone or computer to the <strong>same Wi-Fi network</strong> as the radio.</li>
-  <li>Open the browser and type the IP address shown by the radio, for example <code>http://192.168.1.80</code>.</li>
+  <li><strong>From the radio's menu</strong> (the easiest way): open the SETUP menu (from the now-playing screen tap <span class="kbd">PRESET</span> and then <span class="kbd">SETUP MENU</span>; from the standby clock tap <span class="kbd">SETUP</span>) and choose <span class="kbd">WI-FI / WEB</span>. The Wi-Fi screen shows the network name and, just below it, the line <strong>IP: 192.168.1.80</strong>, as in the photo above.</li>
+  <li><strong>On first connection</strong>: when the setup wizard connects to the network, the <em>NETWORK CONNECTED</em> screen shows the address in large type (<strong>IP 192.168.1.80</strong>). It is worth writing it down straight away.</li>
+  <li><strong>From your router</strong>: in the router's app or admin page, under "Connected devices", the radio is listed with its IP address.</li>
 </ol>
-<p>From the web page you can:</p>
+
+<h3>Step 2 — Open the page on a smartphone</h3>
+<ol>
+  <li>Make sure the phone's Wi-Fi is on and connected to your home network.</li>
+  <li>Open the browser (Safari on iPhone, Chrome on Android).</li>
+  <li>Tap the address bar at the top and type <code>http://</code> followed by the IP address, for example <code>http://192.168.1.80</code>. Do not type "www" and do not use the Google search box.</li>
+  <li>Confirm: the <em>Smart Internet Radio</em> page opens, showing the station on air.</li>
+  <li><strong>To keep it at hand</strong>: on iPhone tap the Share button and choose <em>Add to Home Screen</em>; on Android open Chrome's ⋮ menu and choose <em>Add to Home screen</em>. An icon appears, just like an app.</li>
+</ol>
+
+<h3>Step 3 — Open the page on a computer</h3>
+<ol>
+  <li>Make sure the PC or Mac is connected to your home network, over Wi-Fi or by cable to the router.</li>
+  <li>Open the browser, type <code>http://192.168.1.80</code> in the address bar (replace the number with your radio's address) and press Enter.</li>
+  <li>Bookmark the page (Ctrl+D on Windows, Cmd+D on Mac) to find it again with one click.</li>
+</ol>
+
+<h3>What you can do from the control page</h3>
+<p>The control page is currently in Italian; the button names are given below as they appear on screen.</p>
+<table>
+  <tr><th>Section</th><th>Functions</th></tr>
+  <tr><td>Now playing</td><td>Station name and logo, artist and track title, radio status (playing, stopped, standby).</td></tr>
+  <tr><td>Controls</td><td><span class="kbd">▶</span> play, <span class="kbd">■</span> stop, <span class="kbd">MUTE</span> silences the sound, <span class="kbd">STANDBY</span> stops the audio and shows the clock (it becomes <span class="kbd">ACCENDI</span>, "switch on", to wake the radio). The slider sets the radio's volume.</td></tr>
+  <tr><td>Ascolto sul computer<br><small>(listen on the computer)</small></td><td><span class="kbd">ASCOLTA</span> plays the same station on the phone or PC, with its own volume; <span class="kbd">STOP PC</span> stops it. <em>APRI IN VLC</em> opens the station in the VLC player, useful if the browser cannot play it.</td></tr>
+  <tr><td>Preset</td><td>Three pages (1–10, 11–20, 21–30). Tap a name to play the station, <span class="kbd">#</span> to change its number, <span class="kbd">X</span> to delete it.</td></tr>
+  <tr><td>Analizzatore di spettro<br><small>(spectrum analyser)</small></td><td>Spectrum and two VU meters (left and right) moving with the music in real time.</td></tr>
+  <tr><td>Equalizzatore 10 bande<br><small>(10-band equalizer)</small></td><td>Sliders for each band and channel, the <em>Canali L e R collegati</em> (link L and R) box and the sound preset buttons.</td></tr>
+  <tr><td>Cerca stazioni nel mondo<br><small>(search worldwide)</small></td><td>Type the name (even partial) and/or choose country and genre, then <span class="kbd">CERCA</span> (search). Pick a station from the list and press <span class="kbd">PLAY RADIO</span> to listen, or <span class="kbd">SALVA NEI PRESET</span> to store it under the number you want. <span class="kbd">PRECEDENTI</span> / <span class="kbd">SUCCESSIVE</span> browse previous / next results.</td></tr>
+  <tr><td>Aggiornamento firmware<br><small>(firmware update)</small></td><td>Shows the installed version; <span class="kbd">CONTROLLA ORA</span> checks for a new one and <span class="kbd">INSTALLA</span> installs it.</td></tr>
+</table>
+<p>Every change made from the page appears immediately on the radio's display, and vice versa. Several phones and computers can be used at the same time.</p>
+
+<h3>If the page does not open</h3>
 <ul>
-  <li>start and stop playback, adjust the volume and mute;</li>
-  <li>see the station, the current track and the cover art;</li>
-  <li>search the worldwide catalogue and save stations to presets, or delete a preset;</li>
-  <li>listen to the same station directly on the computer, with its own volume. The <em>OPEN IN VLC</em> link is for stations the browser cannot play.</li>
+  <li>Check that the phone or PC is on the <strong>same Wi-Fi network</strong> as the radio and is not using mobile data.</li>
+  <li>Check that you typed <code>http://</code>, not <code>https://</code>, and that the numbers of the address are correct.</li>
+  <li>After a router restart the radio's address may change: read it again in <strong>SETUP → WI-FI / WEB</strong> and update your bookmark. To keep it fixed, you can "reserve" the address for the radio in the router settings (static DHCP or "fixed IP").</li>
+  <li>The page only works inside your home network: it cannot be reached from outside.</li>
 </ul>
-<div class="callout tip">Bookmark the page on your phone, or add it to the Home screen, so it is always at hand.</div>
 
 <h2 id="language">13. Language</h2>
 <p><strong>SETUP → LANGUAGE</strong>: choose Italiano, English, Deutsch, Français, Español or Українська. The radio restarts to apply the new language.</p>
